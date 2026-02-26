@@ -91,6 +91,8 @@ Accessed: 26 February 2026.
 Available at: https://www.geeksforgeeks.org/system-design/memento-design-pattern/  
 Accessed: 26 February 2026.
 
+---
+
 ## 👤 Author
 
 ### **Kyle Pillay**
