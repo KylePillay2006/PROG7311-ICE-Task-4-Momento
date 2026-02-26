@@ -1,0 +1,30 @@
+/* Minimal overrides — main styles are in _Layout.cshtml <style> block */
+
+/* Override the default Bootstrap template's absolute footer */
+.footer {
+    position: relative !important;
+    bottom: auto !important;
+    width: 100%;
+    line-height: 60px;
+}
+
+a {
+    color: #a29bfe;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover { color: #00C9A7; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: rgba(255,255,255,0.03); }
+::-webkit-scrollbar-thumb {
+    background: rgba(108,99,255,0.4);
+    border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(108,99,255,0.7); }
+
+::selection {
+    background: rgba(108,99,255,0.4);
+    color: #fff;
+}

@@ -1,0 +1,250 @@
+@{
+    ViewData["Title"] = "Home";
+}
+
+<style>
+    .home-wrapper {
+        max-width: 860px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 2rem 1rem 4rem;
+    }
+
+    /* Hero */
+    .hero {
+        animation: fadeSlideUp 0.6s ease both;
+        margin-bottom: 4rem;
+    }
+
+    .hero-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, rgba(108,99,255,0.25), rgba(0,201,167,0.25));
+        border: 1px solid rgba(108,99,255,0.4);
+        color: #a29bfe;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        padding: 0.35rem 1rem;
+        border-radius: 50px;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.4rem, 6vw, 4rem);
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 1.25rem;
+        background: linear-gradient(135deg, #ffffff 0%, #a29bfe 50%, #00C9A7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        color: rgba(255,255,255,0.5);
+        max-width: 520px;
+        margin: 0 auto 2.5rem;
+        line-height: 1.7;
+    }
+
+    .hero-actions {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .btn-primary-hero {
+        background: linear-gradient(135deg, #6C63FF, #574fd6);
+        color: #fff;
+        border: none;
+        border-radius: 12px;
+        padding: 0.8rem 2rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 20px rgba(108,99,255,0.45);
+    }
+
+    .btn-primary-hero:hover {
+        transform: translateY(-3px) scale(1.03);
+        box-shadow: 0 10px 30px rgba(108,99,255,0.6);
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .btn-ghost-hero {
+        background: rgba(255,255,255,0.07);
+        color: rgba(255,255,255,0.8);
+        border: 1.5px solid rgba(255,255,255,0.15);
+        border-radius: 12px;
+        padding: 0.8rem 2rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(8px);
+    }
+
+    .btn-ghost-hero:hover {
+        background: rgba(255,255,255,0.12);
+        color: #fff;
+        transform: translateY(-3px);
+        text-decoration: none;
+        border-color: rgba(255,255,255,0.3);
+    }
+
+    /* Feature Cards */
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.25rem;
+        margin-bottom: 4rem;
+        animation: fadeSlideUp 0.7s ease 0.1s both;
+    }
+
+    .feature-card {
+        background: rgba(255,255,255,0.05);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 18px;
+        padding: 1.75rem 1.5rem;
+        text-align: left;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .feature-card::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 2px;
+        background: var(--accent-gradient, linear-gradient(90deg, #6C63FF, #00C9A7));
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(108,99,255,0.25);
+        background: rgba(108,99,255,0.07);
+        box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+    }
+
+    .feature-card:hover::before { opacity: 1; }
+
+    .feature-icon {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    .feature-card h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 0.5rem;
+    }
+
+    .feature-card p {
+        font-size: 0.85rem;
+        color: rgba(255,255,255,0.45);
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    /* Stats Row */
+    .stats-row {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.07);
+        border-radius: 18px;
+        padding: 2rem;
+        animation: fadeSlideUp 0.7s ease 0.2s both;
+    }
+
+    .stat-item { text-align: center; }
+
+    .stat-number {
+        font-size: 2rem;
+        font-weight: 800;
+        background: linear-gradient(135deg, #6C63FF, #00C9A7);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        line-height: 1;
+        margin-bottom: 0.3rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+        color: rgba(255,255,255,0.4);
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+
+    @@keyframes fadeSlideUp {
+        from { opacity: 0; transform: translateY(24px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @@media (max-width: 576px) {
+        .hero h1 { letter-spacing: -0.5px; }
+        .stats-row { gap: 2rem; }
+    }
+</style>
+
+<div class="home-wrapper">
+
+    <!-- Hero -->
+    <div class="hero">
+        <div class="hero-badge">✦ Memento Pattern Demo</div>
+        <h1>Write Smarter.<br/>Undo Anything.</h1>
+        <p>A clean, modern text editor powered by the Memento design pattern — save snapshots of your work and restore them instantly.</p>
+        <div class="hero-actions">
+            <a asp-controller="TextEditor" asp-action="Index" class="btn-primary-hero">
+                ✦ Open Editor
+            </a>
+            <a asp-controller="Home" asp-action="Privacy" class="btn-ghost-hero">
+                Privacy Policy
+            </a>
+        </div>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="features-grid">
+        <div class="feature-card">
+            <span class="feature-icon">✍️</span>
+            <h3>Rich Text Editing</h3>
+            <p>A distraction-free editor with a smooth, responsive interface built for focus.</p>
+        </div>
+        <div class="feature-card">
+            <span class="feature-icon">💾</span>
+            <h3>Version Snapshots</h3>
+            <p>Save named versions of your content at any point and browse your full history.</p>
+        </div>
+        <div class="feature-card">
+            <span class="feature-icon">↩️</span>
+            <h3>Instant Undo</h3>
+            <p>Restore any previous version instantly using the Memento design pattern under the hood.</p>
+        </div>
+    </div>
+
+</div>

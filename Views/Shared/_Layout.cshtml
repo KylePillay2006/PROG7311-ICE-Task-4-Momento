@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - TextEditor</title>
+    <script type="importmap"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TextEditor.styles.css" asp-append-version="true" />
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+
+        :root {
+            --primary: #6C63FF;
+            --primary-dark: #574fd6;
+            --secondary: #00C9A7;
+            --accent: #FF6584;
+            --bg-gradient: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            --glass-bg: rgba(255,255,255,0.07);
+            --glass-border: rgba(255,255,255,0.12);
+            --card-bg: rgba(255,255,255,0.05);
+            --text-primary: #f0f0f0;
+            --text-muted: rgba(255,255,255,0.5);
+            --shadow: 0 8px 32px rgba(0,0,0,0.4);
+            --radius: 16px;
+            --transition: all 0.3s ease;
+        }
+
+        html, body {
+            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-primary);
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ── Navbar ── */
+        header nav.navbar {
+            background: rgba(255,255,255,0.06) !important;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--glass-border) !important;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+            padding: 0.75rem 1.5rem;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.4rem;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-link {
+            color: var(--text-muted) !important;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 0.4rem 1rem !important;
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--text-primary) !important;
+            background: var(--glass-bg);
+        }
+
+        .navbar-toggler {
+            border-color: var(--glass-border);
+            filter: invert(1);
+        }
+
+        /* ── Main Container ── */
+        .container {
+            flex: 1;
+            padding-top: 2rem;
+            padding-bottom: 5rem;
+        }
+
+        main {
+            animation: fadeSlideUp 0.6s ease both;
+        }
+
+        /* ── Footer ── */
+        footer.footer {
+            position: relative !important;
+            bottom: auto !important;
+            background: rgba(255,255,255,0.04);
+            border-top: 1px solid var(--glass-border) !important;
+            color: var(--text-muted);
+            line-height: 60px;
+            font-size: 0.85rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        footer a:hover { color: var(--secondary); }
+
+        /* ── Animations ── */
+        @@keyframes fadeSlideUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">✦ TextEditor</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2026 - TextEditor &mdash; <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
