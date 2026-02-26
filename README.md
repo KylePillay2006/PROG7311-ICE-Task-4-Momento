@@ -106,8 +106,6 @@ Final-year Application Development Student | Emeris
 
 🌐 Portfolio: [kylepillay2006.github.io](https://kylepillay2006.github.io/PersonalPortfolioWebsite/)
 
-💻 Username: @ByteSizedCode123
-
 ---
 
 © 2026 Kyle Pillay
