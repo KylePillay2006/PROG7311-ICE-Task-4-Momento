@@ -4,6 +4,34 @@ An ASP.NET Core MVC text editor with undo and redo, built using the **Memento de
 
 ---
 
+## 📸 Application Screenshots
+
+<table align="center">
+<tr>
+<td align="center">
+<b>Home</b><br>
+<img src="Sample%20Screenshots/Screenshot%202026-02-28%20092326.png" width="350">
+</td>
+<td align="center">
+<b>Text Editor</b><br>
+<img src="Sample%20Screenshots/Screenshot%202026-02-28%20092700.png" width="350">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<b>History</b><br>
+<img src="Sample%20Screenshots/Screenshot%202026-02-28%20092707.png" width="350">
+</td>
+<td align="center">
+<b>Privacy Page</b><br>
+<img src="Sample%20Screenshots/Screenshot%202026-02-28%20093729.png" width="350">
+</td>
+</tr>
+</table>
+
+---
+
 ## 🚀 How to Run
 
 ```bash
