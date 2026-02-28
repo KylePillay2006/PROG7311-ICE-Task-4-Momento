@@ -60,6 +60,38 @@
         margin-bottom: 1rem;
     }
 
+    .privacy-card h2 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #00C9A7;
+        margin: 2rem 0 0.75rem;
+    }
+
+    .privacy-card h2:first-child {
+        margin-top: 0;
+    }
+
+    .privacy-card ul {
+        margin: 0.5rem 0 1rem 1.25rem;
+        padding: 0;
+    }
+
+    .privacy-card ul li {
+        margin-bottom: 0.4rem;
+        color: rgba(255,255,255,0.65);
+    }
+
+    .privacy-card .last-updated {
+        display: inline-block;
+        font-size: 0.8rem;
+        color: rgba(255,255,255,0.3);
+        margin-bottom: 1.75rem;
+        padding: 0.25rem 0.75rem;
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 50px;
+        background: rgba(255,255,255,0.04);
+    }
+
     @@keyframes fadeSlideUp {
         from { opacity: 0; transform: translateY(20px); }
         to   { opacity: 1; transform: translateY(0); }
@@ -73,6 +105,59 @@
         <p>Transparency about how we handle your data.</p>
     </div>
     <div class="privacy-card">
-        <p>Use this page to detail your site's privacy policy.</p>
+        <span class="last-updated">Last updated: February 28, 2026</span>
+
+        <h2>1. Overview</h2>
+        <p>
+            TextEditor ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy
+            explains what information we collect when you use our web-based text editor, how we use it,
+            and the choices you have. We believe in keeping things simple and transparent.
+        </p>
+
+        <h2>2. Information We Collect</h2>
+        <p>We collect only what is necessary to provide the service:</p>
+        <ul>
+            <li><strong>Editor content:</strong> Text you write or paste into the editor is stored locally in your browser session to power the Memento-based version history feature. It is not transmitted to our servers.</li>
+            <li><strong>Version snapshots:</strong> Named snapshots you save are kept in browser memory for the duration of your session and are cleared when you close the tab.</li>
+            <li><strong>Usage data:</strong> We may collect anonymised, aggregated analytics (e.g. page views, feature interactions) to improve the product. This data cannot be used to identify you.</li>
+        </ul>
+
+        <h2>3. Cookies &amp; Local Storage</h2>
+        <p>
+            TextEditor uses browser local storage solely to preserve your editing session across page refreshes.
+            We do not use advertising cookies or third-party tracking cookies. You can clear local storage at
+            any time through your browser settings, which will remove all stored content and snapshots.
+        </p>
+
+        <h2>4. How We Use Your Information</h2>
+        <p>Any information we collect is used only to:</p>
+        <ul>
+            <li>Operate and maintain the editor and version-history features.</li>
+            <li>Diagnose technical problems and improve performance.</li>
+            <li>Understand aggregate usage patterns to guide product development.</li>
+        </ul>
+        <p>We do not sell, rent, or share your data with third parties for marketing purposes.</p>
+
+        <h2>5. Data Retention</h2>
+        <p>
+            Because editor content lives in your browser, <em>you</em> control how long it persists.
+            Closing your browser tab clears all session data. Any anonymised analytics we retain are
+            kept for no longer than 12 months before being deleted or further anonymised.
+        </p>
+
+        <h2>6. Security</h2>
+        <p>
+            We follow industry-standard practices to protect any data that passes through our systems,
+            including encrypted connections (HTTPS). However, no method of transmission over the internet
+            is 100% secure, and we cannot guarantee absolute security.
+        </p>
+
+        <h2>7. Changes to This Policy</h2>
+        <p>
+            We may update this Privacy Policy from time to time. When we do, we will revise the
+            "Last updated" date above. Continued use of TextEditor after changes are posted constitutes
+            your acceptance of the revised policy.
+        </p>
+
     </div>
 </div>
