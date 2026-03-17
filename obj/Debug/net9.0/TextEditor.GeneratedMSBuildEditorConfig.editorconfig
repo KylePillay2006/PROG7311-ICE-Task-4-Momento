@@ -9,45 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TextEditor
 build_property.RootNamespace = TextEditor
-build_property.ProjectDir = C:\Users\kylep\Desktop\Kyle\Emeris\Semester 5\Programming 3A\Projects\4. Text Editor (Memento Design Pattern)\TextEditor\
+build_property.ProjectDir = C:\Users\kylep\Desktop\Kyle\Emeris\Semester 5\Programming 3A\ICE Task's\ICE Task 4\Text Editor (Memento Design Pattern)\TextEditor\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\kylep\Desktop\Kyle\Emeris\Semester 5\Programming 3A\Projects\4. Text Editor (Memento Design Pattern)\TextEditor
+build_property.MSBuildProjectDirectory = C:\Users\kylep\Desktop\Kyle\Emeris\Semester 5\Programming 3A\ICE Task's\ICE Task 4\Text Editor (Memento Design Pattern)\TextEditor
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/Projects/4. Text Editor (Memento Design Pattern)/TextEditor/Views/Home/Index.cshtml]
+[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/ICE Task's/ICE Task 4/Text Editor (Memento Design Pattern)/TextEditor/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/Projects/4. Text Editor (Memento Design Pattern)/TextEditor/Views/Home/Privacy.cshtml]
+[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/ICE Task's/ICE Task 4/Text Editor (Memento Design Pattern)/TextEditor/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/Projects/4. Text Editor (Memento Design Pattern)/TextEditor/Views/Shared/Error.cshtml]
+[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/ICE Task's/ICE Task 4/Text Editor (Memento Design Pattern)/TextEditor/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/Projects/4. Text Editor (Memento Design Pattern)/TextEditor/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/ICE Task's/ICE Task 4/Text Editor (Memento Design Pattern)/TextEditor/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/Projects/4. Text Editor (Memento Design Pattern)/TextEditor/Views/TextEditor/Index.cshtml]
+[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/ICE Task's/ICE Task 4/Text Editor (Memento Design Pattern)/TextEditor/Views/TextEditor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGV4dEVkaXRvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/Projects/4. Text Editor (Memento Design Pattern)/TextEditor/Views/_ViewImports.cshtml]
+[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/ICE Task's/ICE Task 4/Text Editor (Memento Design Pattern)/TextEditor/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/Projects/4. Text Editor (Memento Design Pattern)/TextEditor/Views/_ViewStart.cshtml]
+[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/ICE Task's/ICE Task 4/Text Editor (Memento Design Pattern)/TextEditor/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/Projects/4. Text Editor (Memento Design Pattern)/TextEditor/Views/Shared/_Layout.cshtml]
+[C:/Users/kylep/Desktop/Kyle/Emeris/Semester 5/Programming 3A/ICE Task's/ICE Task 4/Text Editor (Memento Design Pattern)/TextEditor/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0v8ezl3ge5

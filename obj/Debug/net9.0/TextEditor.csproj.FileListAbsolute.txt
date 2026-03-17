@@ -94,3 +94,4 @@ C:\Users\kylep\Desktop\Kyle\Emeris\Semester 5\Programming 3A\Projects\4. Text Ed
 C:\Users\kylep\Desktop\Kyle\Emeris\Semester 5\Programming 3A\Projects\4. Text Editor (Memento Design Pattern)\texteditor\obj\Debug\net9.0\TextEditor.pdb
 C:\Users\kylep\Desktop\Kyle\Emeris\Semester 5\Programming 3A\Projects\4. Text Editor (Memento Design Pattern)\texteditor\obj\Debug\net9.0\TextEditor.genruntimeconfig.cache
 C:\Users\kylep\Desktop\Kyle\Emeris\Semester 5\Programming 3A\Projects\4. Text Editor (Memento Design Pattern)\texteditor\obj\Debug\net9.0\ref\TextEditor.dll
+C:\Users\kylep\Desktop\Kyle\Emeris\Semester 5\Programming 3A\Projects\4. Text Editor (Memento Design Pattern)\TextEditor\obj\Debug\net9.0\TextEditor.sourcelink.json
